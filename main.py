@@ -27,11 +27,12 @@ for article in article_list:
     sleep(1)
     if preview:
         previews.append(preview.text)
-    print(previews)
+    # print(previews)
     link = f'https://habr.com{article.find('a', class_='tm-title__link')['href']}'
     date = article.find('time')['datetime']
 
     result_value()
+
 
 
 
